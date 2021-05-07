@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title> Topic 1: Post 2
+    </title>
+    <link rel="shortcut icon" href="Logo.png" />
+
+    <!--web style links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial">
+
+<!--slicknav link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+<!--stylesheet link-->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+<!--jQuery link-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--slicknav jQuery link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+<!--slicknav script-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".menu").slicknav({
+              prependTo: "#slickmenu"
+          });
+      });
+  </script>
+
+
+  </head>
+
+<body>
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="title">
+                <img src="Logo.png" alt="Logo that reads Carolina Community Digest" id="logo">
+            </div>
+            <!--empty nav menu-->
+            <h3 id="account_type">Student</h3>
+        <nav id="slickmenu"></nav>
+        <!--default nav menu-->
+        <nav class="menu">
+          <ul>
+            <li><a href="../../../Menu/SignInPage/index.html">Login</a></li>
+            <li><a href="../../../index.html">About</a></li>
+            <li><a href="https://www.unc.edu/">UNC</a></li>
+            <li><a href="../../../Menu/ContactPage/index.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        </header>
+
+        
+        <aside class="topics">
+            <a href="../../Students_Topic1/index.html" id="SelectedTopic">Housing</a></li>
+            <a href="../../Students_Topic2/index.html">Polls</a></li>
+            <a href="">COVID (inactive)</a></li>
+            <a href="">Study (inactive)</a></li>
+            <a href="">Pets (inactive)</a></li>
+            <a href="">Tell UNC (inactive)</a></li>
+            <a href="">Restaurants (inactive)</a></li>
+        </aside>
+
+
+        <main class="post_section">
+            <article>
+                      <div class="post">
+                      <h3>Subleasing</h3>
+                      <h5>Housing</h5>
+                      <p>Subleasing my apartment! Beautiful big windows, lots of furniture already there. If interested, comment below. </p>
+                      <h6>Amyjevan</h6>
+                      </div>
+                    
+             </article>
+
+             <article>
+                    <div class="post_response">
+                    <h3>Re: Subleasing</h3>
+                    <h6>KarenK</h6>
+                    <p>Are you subleasing because of something bad? I don't want to move in somewhere with mold haha</p>
+                    </div>
+    
+           </article>
+           
+           <article>
+                  <div class="post_response">
+                  <h3>Re: Subleasing</h3>
+                  <h6>LMNOP</h6>
+                  <p>Curious about that too... weird time to be subleasing unless soemthing is wrong. You moving out of town?</p>
+                  </div>
+         </article>
+
+        </main>
+
+
+        <footer class="footer">
+            <h1>Carolina Community Digest</h1>
+            <p>carolina@carolinacommunitydigest.com</p>
+            <p>919-000-0000</p>
+        </footer>
+
+    </div>
+</body>

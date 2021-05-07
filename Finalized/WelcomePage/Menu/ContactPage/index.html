@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title> Contact
+    </title>
+    <link rel="shortcut icon" href="Logo.png" />
+
+    <!--web style links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial">
+
+<!--slicknav link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+<!--stylesheet link-->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+<!--jQuery link-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--slicknav jQuery link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+<!--slicknav script-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".menu").slicknav({
+              prependTo: "#slickmenu"
+          });
+      });
+  </script>
+
+
+  </head>
+
+<body>
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="title">
+                <img src="Logo.png" alt="Logo that reads Carolina Community Digest" id="logo">
+            </div>
+            <!--empty nav menu-->
+        <nav id="slickmenu"></nav>
+        <!--default nav menu-->
+        <nav class="menu">
+          <ul>
+            <li><a href="../SignInPage/index.html">Login</a></li>
+            <li><a href="../../index.html">About</a></li>
+            <li><a href="https://www.unc.edu/">UNC</a></li>
+            <li><a href="index.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        </header>
+
+
+        <main class="main">
+            <article>
+                    <div class="post">
+                        <form action="" class="contactform">
+
+                            <label for="user">Username</label>
+                            <input type="text" id="user" name="username" placeholder="Username">
+                        
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Email Address">
+                        
+                            <label for="usertype">User Type</label>
+                            <select id="usertype" name="usertpe">
+                              <option value="student">Student</option>
+                              <option value="administrator">Administrator</option>
+                              <option value="Professor">Professor</option>
+                              <option value="Other">Other</option>
+                            </select>
+                        
+                            <label for="comment">Please describe your issue or commment</label>
+                            <textarea id="comment" name="comment" placeholder="Start typing"></textarea>
+                        
+                                <a href="ThankYou/index.html">
+                                    <input type="button" value="submit" id="submit">
+                                </a>
+                        
+                          </form>
+                    </div>
+              </article>
+      
+        </main>
+
+
+        <footer class="footer">
+            <h1>Carolina Community Digest</h1>
+            <p>carolina@carolinacommunitydigest.com</p>
+            <p>919-000-0000</p>
+        </footer>
+
+    </div>
+</body>

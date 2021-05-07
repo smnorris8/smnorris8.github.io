@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title> Thank you!
+    </title>
+    <link rel="shortcut icon" href="Logo.png" />
+
+    <!--web style links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial">
+
+<!--slicknav link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+<!--stylesheet link-->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+<!--jQuery link-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--slicknav jQuery link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+<!--slicknav script-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".menu").slicknav({
+              prependTo: "#slickmenu"
+          });
+      });
+  </script>
+
+
+  </head>
+
+<body>
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="title">
+                <img src="Logo.png" alt="Logo that reads Carolina Community Digest" id="logo">
+            </div>
+            <!--empty nav menu-->
+        <nav id="slickmenu"></nav>
+        <!--default nav menu-->
+        <nav class="menu">
+          <ul>
+            <li><a href="../../SignInPage/index.html">Login</a></li>
+            <li><a href="../../../index.html">About</a></li>
+            <li><a href="https://www.unc.edu/">UNC</a></li>
+            <li><a href="../../ContactPage/index.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        </header>
+
+
+        <main class="main">
+            <article>
+                    <img src="" alt="">
+                    <div class="post">
+                    <h4>Thank you for your submission!</h4>
+                    <p id="inbox">We will be sure to get back to you soon, so keep an eye on your inbox!</->
+                    <p>Click <a href="../../../index.html">here</a> to return to the Welcome page. Alternatively, click <a href="../index.html">here</a> to create another submission.</p>
+                    </div>
+              </article>
+      
+        </main>
+
+
+        <footer class="footer">
+    
+<h1>Carolina Community Digest</h1>
+<p>carolina@carolinacommunitydigest.com</p>
+<p>919-000-0000</p>
+        </footer>
+
+    </div>
+</body>

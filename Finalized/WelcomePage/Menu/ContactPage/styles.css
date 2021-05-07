@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Verdana;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    height: 100vh;
+  
+}
+
+/*Text Section*/
+
+.topics button{
+  border-radius: 20px;
+  border-style: none;
+  background-color: white;
+}
+
+p{
+  font-family: Arial;
+}
+/*Posts Section*/
+.post{
+    border: 1px solid #ccc;
+    color: black;
+    padding: 10px;
+    width: 80%;
+}
+
+.contactform{
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  padding-top: 10px;
+}
+
+
+#submit{
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #99badd;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1em;
+}
+
+/*Sectioning of Site*/
+.header{
+  grid-area: header;
+  background-color: #F4F2F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main{
+  grid-area: main;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "post";
+  padding: 20px;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: #F4F2F0;
+}
+
+/* Image Section */
+#logo{
+  width: 40%;
+}
+
+.title{
+  display: flex;
+  align-items: flex-end;
+  padding: 0px;
+}
+
+/* Desktop Menu Section */
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  background-color: #99badd;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 3px;
+  
+}
+
+li:hover {
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Links */
+a {
+  color: #99badd;
+  text-decoration: none;
+}
+
+/* Breakpoint Section*/
+
+.slicknav_menu {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .menu {
+  display: none;
+}
+
+  .slicknav_menu {
+  display: block;
+}
+
+  .grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header"
+  "main main main"
+  "footer footer footer";
+  }
+
+.main{
+    grid-area: main;
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+
+.slicknav_menu{
+  background-color: transparent;
+  size: 50%;
+}
+
+.slicknav_nav ul li a{
+  color: white;
+}
+
+.slicknav_nav ul li a:hover{
+  background-color: transparent;
+  color: white;
+
+}
+
+#logo{
+  width: 80%;
+}
+
+}
+
+
+.footer h1{
+  text-align: center;
+  padding: 1%;
+}
+    
+
+.footer p{
+text-align: center;
+
+}
+
+.footer{
+  
+  font-family: Verdana;
+}

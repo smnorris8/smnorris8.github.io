@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title> Log in
+    </title>
+    <link rel="shortcut icon" href="Logo.png" />
+
+    <!--web style links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial">
+
+<!--slicknav link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+<!--stylesheet link-->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+<!--jQuery link-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--slicknav jQuery link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+<!--slicknav script-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".menu").slicknav({
+              prependTo: "#slickmenu"
+          });
+      });
+  </script>
+
+
+  </head>
+
+<body>
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="title">
+                <img src="Logo.png" alt="Logo that reads Carolina Community Digest" id="logo">
+            </div>
+            <!--empty nav menu-->
+        <nav id="slickmenu"></nav>
+        <!--default nav menu-->
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="../../index.html">About</a></li>
+            <li><a href="https://www.unc.edu/">UNC</a></li>
+            <li><a href="../ContactPage/index.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        </header>
+
+
+        <main class="main">
+            <h1 id="maintitle">Login</h1>
+    
+                <form id="login" action="action_page.php" method="post">
+                    <input type="text" name="username" id="username" placeholder="Username" class=" loginsection">
+                    <input type="password" name="password" id="password" placeholder="Password"
+                    class=" loginsection">
+                    <a href="../../Students/Students_Topic1">
+                    <input type="button" value="Login" id="submit">
+                    </a>
+                </form>
+
+                <div class="Usertype">
+                    <h3>User Type</h3>
+                    <a href="../../Students/Students_Topic1"><button class="user">Student</button></a>
+                    <a href=""><button class="user">Professor (inactive)</button></a>
+                    <a href=""><button class="user">Administrator (inactive)</button></a>
+                </div>
+                
+        </main>
+
+
+        <footer class="footer">
+            <h1>Carolina Community Digest</h1>
+            <p>carolina@carolinacommunitydigest.com</p>
+            <p>919-000-0000</p>
+        </footer>
+
+    </div>
+</body>
